@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adn Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-------- Navbar --------->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="contents/logo.png" alt="logo" width='130px'>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="admin.html">Admin-Login</a>
+                <a href="index.html">Verify</a>
+            </div>
+            <div class="sidebar-btn" onclick="sideSwipe()">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+
+        </nav>
+        <!-- side menu / side navbar -->
+
+        <div class="side-menu">
+            <img src="contents/logo.png" alt="logo" width='120px' id="side-menu-img">
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin-Login</a>
+            <a href="index.html">Verify</a>
+        </div>
+
+        <!-- Main Page Content --------------------->
+        <div class="head-box">
+
+            <!-- <div class="container">
+                <h3>Blockchain Verification</h3>
+                <h1>Verification System<br>
+                    <span class="change_content"> </span>
+                </h1>
+            </div> -->
+
+            <div class="container">
+                <h1 id="title">Admin Page</h1><br>
+                <section class="verification">
+                    <h2>Verify Certificate</h2>
+                    <input type="text" id="certificateHash" placeholder="Enter Certificate Code">
+                    <button id="verifyButton" class="btn">Verify</button>
+                    <p id="verificationResult"></p>
+                </section>
+                <section class="certificate-registration">
+                    <h2>Register Certificate</h2> <br>
+                    <textarea id="certificateData" placeholder="Certificate Data"></textarea>
+                    <button id="registerButton"
+                    class="btn">Register</button>
+                </section>
+            </div>
+        </div>
+
+        <div class="black-effect" onclick="removeBlack()"></div>
+    </header>
+
+
+    <div class="container2">
+        <p class="p1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam omnis, sint ut asperiores
+            eveniet veritatis illum quos ipsum doloremque dolores iusto perspiciatis cupiditate quasi quod eius debitis?
+            Nostrum minima dolores magni officia tempora omnis eius nihil odit, quaerat sint consequatur velit expedita
+            corrupti quod quas enim sed ducimus porro fugiat eaque sequi! Sequi, quisquam!</p>
+        <div class="who-we-are">
+            Lorem, ipsum dolor.
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-div">
+            <p>Footer</p>
+        </div>
+    </footer>
+
+    <script src="sidebar.js"></script>
+    <script src="verify.js"></script>
+</body>
+
+</html>

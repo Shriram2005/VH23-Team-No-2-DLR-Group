@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates Verification System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-------- Navbar --------->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="contents/logo.png" alt="logo" width='130px'>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="admin.html">Admin-Login</a>
+                <a href="#">Verify</a>
+            </div>
+            <div class="sidebar-btn" onclick="sideSwipe()">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+
+        </nav>
+        <!-- side menu / side navbar -->
+
+        <div class="side-menu">
+            <img src="contents/logo.png" alt="logo" width='120px' id="side-menu-img">
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin-Login</a>
+            <a href="#">Verify</a>
+        </div>
+
+        <!-- Main Page Content --------------------->
+        <div class="head-box">
+
+            <div class="container">
+                <h1 id="title">Certificate Verification System</h1><br>
+
+                <label for="imageNumber">
+                    <h2>Verify Certificate</h2>
+                </label>
+                <input type="text" id="imageNumber" maxlength="8" placeholder="Enter 8 Digit Code">
+                <!-- show note -->
+                <div class="note"></div>
+
+                <button id="verifyButton" class="btn" onclick="showImage()">Verify</button>
+                <p id="verificationResult"></p>
+            </div>
+            <!-- <div class="image-container">
+                <img id="displayedImage" src="" alt="Image" width="500px">
+            </div> -->
+
+        </div>
+
+        <div class="black-effect" onclick="removeBlack()"></div>
+    </header>
+
+
+    <div class="container2" id="container2">
+
+        <div class="image-container">
+            <img id="displayedImage" src="" alt="Image" width="500px">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-div">
+            <p>@Lorem, ipsum dolor.</p>
+        </div>
+    </footer>
+
+    <script src="sidebar.js"></script>
+    <script src="verify.js"></script>
+</body>
+
+</html>
