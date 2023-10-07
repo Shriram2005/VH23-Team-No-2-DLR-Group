@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adn Page</title>
+    <title>Admin Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
     <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,9 +19,10 @@
                 <img src="contents/logo.png" alt="logo" width='130px'>
             </div>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="admin.html">Admin-Login</a>
+                <a href="#">Home</a>
+                <a href="login.html">Admin-Login</a>
                 <a href="index.html">Verify</a>
+                <a href="admin.php">Contact Us</a>
             </div>
             <div class="sidebar-btn" onclick="sideSwipe()">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
@@ -31,23 +33,34 @@
 
         <div class="side-menu">
             <img src="contents/logo.png" alt="logo" width='120px' id="side-menu-img">
-            <a href="index.html">Home</a>
-            <a href="admin.html">Admin-Login</a>
+            <a href="#">Home</a>
+            <a href="login.html">Admin-Login</a>
             <a href="index.html">Verify</a>
+            <a href="admin.php">Contact Us</a>
         </div>
 
         <!-- Main Page Content --------------------->
         <div class="head-box">
-
-
             <div class="container">
                 <h1 id="title">Admin Page</h1><br>
+
                 <section class="certificate-registration">
-                    <h2>Register Certificate</h2> <br>
-                    <textarea id="certificateData" placeholder="Certificate Data"></textarea>
-                    <button id="registerButton"
-                    class="btn">Register</button>
+                    <h2>Register Certificate</h2><br><br>
+                    <form action="process_form.php" method="post">
+                        <p>Candidate Name :</p>
+                        <input type="text" name="candidate_name" placeholder="Enter full name" required>
+                        <p>Certification Name :</p>
+                        <input type="text" name="certification_name" placeholder="Certification Name" required>
+                        <p>Starting Date :</p>
+                        <input type="date" name="starting_date" placeholder="Starting Date" required>
+                        <p>Ending Date :</p>
+                        <input type="date" name="ending_date" placeholder="Ending Date" required>
+                
+                        <button type="submit" class="btn" name="registerButton">Register</button>
+                    </form>
                 </section>
+                
+
             </div>
         </div>
 

@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="contents/logo.png" alt="logo" width='130px'>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="login.html">Admin-Login</a>
+                <a href="index.html">Verify</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="sidebar-btn" onclick="sideSwipe()">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+
+        </nav>
+        <!-- side menu / side navbar -->
+
+        <div class="side-menu">
+            <img src="contents/logo.png" alt="logo" width='120px' id="side-menu-img">
+            <a href="#">Home</a>
+            <a href="login.html">Admin-Login</a>
+            <a href="index.html">Verify</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="black-effect" onclick="removeBlack()"></div>
+
+
+        <div class="container">
+            <div class="login-box">
+                <form id="login-form">
+                    <div class="title">
+                        Login
+                    </div>
+                    <div class="row-div">
+                        <label for="username" id="usernameL">Username</label><br>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="row-div">
+                        <label for="password" id="passL">Password</label><br>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button id="submit" onclick="submitForm()">SUBMIT</button>
+                    <div class="notice">Logged in successfully.</div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <script src="login.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
+
+<!-- style ----------------------------------------------------- -->
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    background-image: url(contents/bg5.avif);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 350px;
+    background-color: #201d22;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 0 30px 0px #221929;
+    position: relative;
+}
+
+.login-box form {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 15px 0 20px 0;
+}
+
+.row-div {
+    /* background-color: gold; */
+    color: white;
+    width: 100%;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.row-div label {
+    padding-left: 10px;
+    font-size: 18px;
+    position: absolute;
+}
+
+.row-div input {
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.row-div input:focus {
+    outline: none;
+}
+
+#submit {
+    color: #7a1faf;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    border-radius: 8px;
+    margin: 30px 0 20px 0;
+    transition-duration: .2s;
+}
+
+/* notice div -------------- */
+
+.notice {
+    display: none;
+    text-align: center;
+    border: 2px dotted rgba(0, 255, 0);
+    color: rgb(255, 255, 255);
+    opacity: .6;
+    border-radius: 5px;
+    position: absolute;
+    width: 70%;
+    bottom: -40px;
+}
+
+/* hover effects ------------------------------------ */
+
+#submit:hover {
+    background-color: #1d1717;
+}
+
+
+</style>

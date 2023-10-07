@@ -14,7 +14,7 @@ body {
 Header {
     Height: 100%;
     Background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
-        url("contents/bg1.jpg");
+    url("contents/bg4.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -190,13 +190,6 @@ button:hover {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.754), transparent,transparent, rgba(0, 0, 0, 0.656),rgb(0, 0, 0));
-}
-
-.p1-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    max-width: 800px;
 }
 
 .output-info {
